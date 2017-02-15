@@ -1,0 +1,41 @@
+﻿<div class="MainCenterDiv">
+    <div class="headerEventDiv">
+        <span>Upcoming sessions <i class="notiNumberBig">8</i></span>
+    </div>
+
+    <div class="upcomingSessionsHome" ng-repeat="x in upComingData">
+        <div class="sessionDetailsBox">
+            <img ng-src="{{x.image}}" class="comingSessionsHomeIcon">
+            <div class="SessionDetails">
+                <h4>{{x.title}} <samp class="yellowSamp">In-person</samp></h4>
+                <p>
+                    by: <span class="sessionCreatorName">{{x.author}}</span>
+                </p>
+                <p>{{x.category}}</p>
+            </div>
+            <div class="timeSessionDiv">
+                <span>{{x.day}} <span>{{x.time}}</span> </span>
+                <img src="img/time.png" />
+            </div>
+        </div>
+        <p> {{x.description}} </p>
+        <br>
+        <p> session Details session Details ?</p>
+        <a href="#" class="redButton">Cancel Session</a>
+    </div>
+    <div class="headerEventDiv">
+        <span>Pervious Sessions </span>
+    </div>
+    <div>
+        <div class="previousSessionsHome" ng-repeat=" x in previousData">
+            <img ng-src="{{x.image}}" class="previousSessionsHomeIcon">
+            <div class="SessionDetails">
+                <h4>{{x.title}} </h4>
+                <p>{{x.category}}</p>
+            </div>
+            <div class="timeSessionPrev">
+                <span>{{x.date}}</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="sessions">
+
+<head>
+    <title>My session</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/general-styles.css">
+</head>
+
+<body >
+<section>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Tyro">
+                    </a>
+                </div>
+                <div class="dropdown navdropdown">
+                    <a href="#" class="dropdown-toggle homeUserProfileBox" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <img src="img/download.jpg" class="UserProfileImage"/>
+                        <p class="userProfileCont">
+                            <samp class="UserProfileName">Farouk Hosny
+                                <i class="fa fa-chevron-down menuCaret" aria-hidden="true"></i>
+                            </samp>
+                            <samp class="UserProfileCrdiet">$340</samp>
+                        </p>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a>
+                        </li>
+                        <li><a href="#">Another action</a>
+                        </li>
+                        <li><a href="#">Something else here</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a>
+                        </li>
+                        <li><a href="#">One more separated link</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="homeMenuNoti"><samp><i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <i class="notiNumber">8</i></samp></a>
+                <a href="#" class="homeMenuMsg"><samp><i class="fa fa-envelope-o" aria-hidden="true"></i></samp></a>
+
+
+                <div class="navBarSearch">
+                    <form class="navbar-form navbar-left">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for instructors topics , any thing">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="fa fa-search searchIcon" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <div id="navbar2" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a>
+                        </li>
+                        <li><a href="#">Find a tutor</a>
+                        </li>
+                        <li><a href="#">Contact us</a>
+                        </li>
+
+
+                    </ul>
+
+
+                </div>
+                <!--/.nav-collapse -->
+
+            </div>
+
+            <!--/.container-fluid -->
+        </nav>
+    </div>
+</section>
+
+    <section class="mainContent" ng-view>      
+    </section>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/usersessions/usersession.controller.js"></script>
+
+</body>
+
+</html>

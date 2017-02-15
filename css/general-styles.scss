@@ -1,0 +1,438 @@
+$primary-color: #1abc9c;
+.navbar {
+    border: 0;
+    background: none;
+    margin-bottom: 5px;
+    .navBarSearch {
+        padding-top: 5px;
+        .input-group {
+            width: 280px;
+            .btn-default {
+                border-left: 0;
+                box-shadow: 0 0 0;
+                border-color: #dedede;
+                padding: 10px 5px;
+                .searchIcon {
+                    height: 20px;
+                    float: right;
+                    background-size: 100% auto;
+                    color: #c4c4c4;
+                    font-size: 18px;
+                }
+                &:hover {
+                    background: none;
+                    border-left: 0;
+                    border-color: #cccccc;
+                    padding: 10px 5px;
+                }
+                &:focus {
+                    outline: 0 !important;
+                    border-color: #dedede !important;
+                    background: none;
+                }
+            }
+            .form-control {
+                box-shadow: 0 0 0;
+                border-right: 0;
+                font-size: 12px;
+                font-style: italic;
+                padding: 20px 5px;
+                outline: 0 !important;
+                border-color: #dedede !important;
+            }
+        }
+    }
+    .navbar-nav {
+        li {
+            a {
+                color: #9b9b9b;
+                padding: 20px 10px 0 10px;
+            }
+        }
+    }
+    .homeMenuNoti {
+        padding: 15px 20px 0 10px !important;
+        float: right;
+        samp {
+            width: 30px;
+            height: 30px;
+            display: block;
+            background-repeat: no-repeat;
+            position: relative;
+            color: black;
+            font-size: 29px;
+            line-height: 5px;
+        }
+        .notiNumber {
+            background: #e74c3c;
+            color: white;
+            position: absolute;
+            border-radius: 50%;
+            right: 0px;
+            top: -3px;
+            text-align: center;
+            font-style: normal;
+            padding: 5px;
+            line-height: 8px;
+            font-size: 12px;
+        }
+    }
+    .homeMenuMsg {
+        padding: 15px 0 0 25px !important;
+        float: right;
+        samp {
+            width: 35px;
+            height: 30px;
+            display: block;
+            background-repeat: no-repeat;
+            font-size: 30px;
+            color: #8a9697;
+            line-height: 0px;
+        }
+    }
+    .navdropdown {
+        float: right;
+        .homeUserProfileBox {
+            overflow: hidden;
+            display: block !important;
+            margin: 8px 0 0 0;
+            padding: 0 0 0 32px !important;
+            .UserProfileImage {
+                border-radius: 50%;
+                width: 45px;
+                height: 45px;
+                float: left;
+            }
+            &:after {
+                content: " ";
+                position: absolute;
+                left: 0px;
+                height: 36px;
+                width: 1px;
+                background: #d2d7d7;
+                margin-top: 5px;
+            }
+            .userProfileCont {
+                float: right;
+                padding-top: 9px;
+                margin: 0;
+                line-height: 12px;
+                font-weight: bold;
+            }
+            .UserProfileName {
+                margin-left: 10px;
+                display: block;
+                color: #525252;
+            }
+            .UserProfileCrdiet {
+                margin-left: 10px;
+                color: $primary-color;
+            }
+        }
+    }
+}
+.mainContent {
+    background: #eef2f5;
+    min-height: 200px;
+    .MainCenterDiv {
+        width: 65%;
+        display: block;
+        margin: auto;
+        padding-top: 20px;
+        overflow: hidden;
+        .headerEventDiv {
+            text-align: center;
+            position: relative;
+            padding: 15px 0;
+            margin: 10px 0;
+            &::before {
+                content: " ";
+                width: 100%;
+                height: 1px;
+                background: #cacdcf;
+                position: absolute;
+                left: 0;
+                top: 25px;
+                z-index: 0;
+            }
+            span {
+                margin: auto;
+                background: #eef2f5;
+                width: auto;
+                font-size: 13px;
+                padding: 0 25px;
+                color: #9a9c9e;
+                position: relative;
+                text-transform: uppercase;
+                font-weight: bold;
+                .notiNumberBig {
+                    background: #e74c3c;
+                    color: white;
+                    position: absolute;
+                    border-radius: 50%;
+                    right: -10px;
+                    top: -10px;
+                    text-align: center;
+                    font-style: normal;
+                    padding: 7px;
+                    line-height: 8px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    border: 6px solid #eef2f5;
+                }
+            }
+        }
+        .previousSessionsHome {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #d9dadc;
+            overflow: hidden;
+            color: #a8a8a8;
+            margin-bottom: 20px;
+            .previousSessionsHomeIcon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                float: left;
+            }
+            .SessionDetails {
+                float: left;
+                margin-left: 10px;
+                h4 {
+                    margin: 0;
+                    margin-top: 0;
+                    color: #757575;
+                    margin-top: 10px;
+                }
+                p {
+                    margin: 0;
+                    color: #a8a8a8;
+                    .sessionCreatorName {
+                        color: $primary-color;
+                    }
+                }
+            }
+            .timeSessionPrev {
+                margin-top: 10px;
+                display: block;
+                float: right;
+                color: #656565;
+            }
+        }
+        .upcomingSessionsHome {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #d9dadc;
+            overflow: hidden;
+            color: #a8a8a8;
+            margin-bottom: 25px;
+            .redButton {
+                float: right;
+                background: #fef5f5;
+                color: #f32222;
+                border: 1px solid #f32222;
+                border-radius: 20px;
+                padding: 5px 10px;
+                text-transform: uppercase;
+                &:hover {
+                    text-decoration: none !important;
+                    color: #f32222;
+                }
+            }
+            .sessionDetailsBox {
+                display: block;
+                overflow: hidden;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #e4e4e4;
+                .comingSessionsHomeIcon {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    float: left;
+                }
+                .timeSessionDiv {
+                    float: right;
+                    span {
+                        color: $primary-color;
+                        font-weight: bold;
+                        font-size: 18px;
+                        margin: 5px;
+                        text-align: center;
+                        float: right;
+                        span {
+                            font-size: 14px;
+                            margin: 0;
+                            float: none;
+                            display: block;
+                            text-align: left;
+                        }
+                    }
+                }
+                .SessionDetails {
+                    float: left;
+                    margin-left: 10px;
+                    h4 {
+                        margin: 0;
+                        color: #757575;
+                        margin-top: 10px;
+                        .yellowSamp {
+                            font-weight: bold;
+                            font-size: 12px;
+                            padding: 2px 15px;
+                            background: #fdfceb;
+                            border-radius: 4px;
+                            color: #c7b467;
+                            border: 1px solid #d2d2d2;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        color: #a8a8a8;
+                        .sessionCreatorName {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .mainContent {
+        .MainCenterDiv {
+            width: 90%;
+        }
+    }
+    .navbar {
+        .navBarSearch {
+            .input-group {
+                width: 214px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 766px) {
+    .input-group .form-control,
+    .input-group-btn:last-child > .btn,
+    .input-group-btn:last-child > .btn-group {
+        z-index: 1;
+    }
+    .mainContent {
+        .MainCenterDiv {
+            width: 100%;
+        }
+    }
+    .navbar {
+        .navBarSearch {
+            .input-group {
+                width: 100%;
+            }
+        }
+    }
+    .navdropdown {
+        position: absolute;
+        z-index: 2;
+        right: 67px;
+        top: 0px;
+    }
+    .navbar {
+        .navdropdown {
+            .homeUserProfileBox {
+                padding: 0 !important;
+            }
+        }
+    }
+    .UserProfileImage {
+        display: none;
+    }
+    .homeMenuNoti {
+        position: absolute;
+        right: 180px;
+        top: 0px;
+    }
+    .homeMenuMsg {
+        position: absolute;
+        right: 240px;
+        top: 0px;
+    }
+    .mainContent {
+        .MainCenterDiv {
+            .upcomingSessionsHome {
+                .sessionDetailsBox {
+                    .timeSessionDiv {
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+    .timeSessionDiv > span {
+        float: none;
+        display: inline-block;
+    }
+    .comingSessionsHomeIcon {
+        margin-right: 10px;
+    }
+    .yellowSamp {
+        display: table;
+    }
+    .SessionDetails {
+        float: none;
+    }
+    .timeSessionDiv > img {
+        float: left;
+    }
+    .previousSessionsHomeIcon {
+        margin-right: 10px;
+    }
+    .timeSessionPrev {
+        margin: 0;
+        float: left !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .navdropdown {
+        right: 52px;
+        letter-spacing: -1px;
+        word-spacing: -4px;
+    }
+    .navbar-toggle {
+        margin-right: 0 !important;
+    }
+    .homeMenuMsg {
+        right: 200px !important;
+    }
+    .homeMenuNoti {
+        right: 143p !important;
+    }
+    .UserProfileName {
+        font-size: 12px !important;
+    }
+    .navbar-brand {
+        padding-left: 0 !important;
+    }
+    .homeMenuMsg {
+        right: 178px !important;
+    }
+    .homeMenuNoti {
+        right: 122px !important;
+        top: 6px !important;
+    }
+    .notiNumber {
+        padding: 3px !important;
+    }
+    .homeMenuNoti > samp {
+        width: 22px !important;
+        font-size: 20px !important;
+    }
+    .homeMenuMsg > samp {
+        font-size: 20px !important;
+    }
+    .homeMenuMsg {
+        right: 158px !important;
+        top: 5px;
+    }
+}
